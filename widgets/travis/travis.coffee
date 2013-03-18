@@ -11,5 +11,5 @@ class Dashing.Travis extends Dashing.Widget
     @_checkStatus(data.items[0].state)
 
   _checkStatus: (status) ->
-    $(@node).removeClass('errored').removeClass('passed').removeClass('started')
+    $(@node).removeClass('errored failed passed started')
     $(@node).addClass(status)
