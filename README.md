@@ -11,35 +11,41 @@ status of the latest build for a repository.
 
 Add it to your dashing's Gemfile.
 
-    gem "travis"
+```ruby
+gem "travis"
+```
 
 ## Configuration
 
 The Travis CI job expects `config/travisci.yml` that looks like:
 
-    org:
-      auth_token: my_org_auth_token
-      repositories:
-        ci_travis_radar: zendesk/radar
-      type: org
-    pro:
-      auth_token: my_pro_auth_token
-      repositories:
-        ci_travis_radar: zendesk/zendesk
-      type: pro
+```yaml
+org:
+  auth_token: my_org_auth_token
+  repositories:
+    ci_travis_radar: zendesk/radar
+  type: org
+pro:
+  auth_token: my_pro_auth_token
+  repositories:
+    ci_travis_radar: zendesk/zendesk
+  type: pro
+```
 
 `repositories` is an hash of repositories and the keys (eg. `ci_travis_radar`) map to a dashing data-ids.  `type` selects whether or not to use a `pro` travis account.
 
 To include the widgets in a dashboard, add the following snippet to the
 dashboards layout file:
 
-    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-id="ci_travis_radar" data-view="Travis" data-unordered="true" data-title="Radar"></div>
-    </li>
+```html
+<li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+  <div data-id="ci_travis_radar" data-view="Travis" data-unordered="true" data-title="Radar"></div>
+</li>
 
-    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-id="ci_travis_zendesk" data-view="Travis" data-unordered="true" data-title="Zendesk"></div>
-    </li>
+<li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+  <div data-id="ci_travis_zendesk" data-view="Travis" data-unordered="true" data-title="Zendesk"></div>
+</li>
+```
 
 ## Preview
 
