@@ -49,7 +49,7 @@ dashboards layout file:
 
 ## Preview
 
-![](https://www.evernote.com/shard/s37/sh/ca6c7a9a-a664-4886-aa6c-8c7f4dfc4ba2/79e5b1ca919fb07430a7ff0ad3fc3d10/res/f72c70b4-390d-4c7d-9e4c-e4cf31dad9ec/skitch.png)
+![Preview](https://www.evernote.com/shard/s37/sh/ca6c7a9a-a664-4886-aa6c-8c7f4dfc4ba2/79e5b1ca919fb07430a7ff0ad3fc3d10/res/f72c70b4-390d-4c7d-9e4c-e4cf31dad9ec/skitch.png)
 
 ## Contributors
 
