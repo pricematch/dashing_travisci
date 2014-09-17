@@ -14,9 +14,14 @@ def update_builds(repository, config)
   end
 
   build = repo.last_build
+  if build.state == 'created' or build.state == 'started'
+    value = "[#{build.branch_info}], #{build.state} #{build.started_at.ago_in_words}"
+  else
+    value = "[#{build.branch_info}], #{build.state} in #{build.duration}s"
+  end
   build_info = {
     label: "Build #{build.number}",
-    value: "[#{build.branch_info}], #{build.state} in #{build.duration}s",
+    value: value,
     state: build.state
   }
   builds << build_info
