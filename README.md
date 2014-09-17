@@ -8,11 +8,13 @@ status of the latest build for a repository.
 ## Dependencies
 
 [travis](https://github.com/travis-ci/travis)
+[time_ago_in_words](https://github.com/elgalu/time_ago_in_words)
 
-Add it to your dashing's Gemfile.
+Add them to your dashing's Gemfile.
 
 ```ruby
 gem "travis"
+gem "time_ago_in_words"
 ```
 
 ## Configuration
